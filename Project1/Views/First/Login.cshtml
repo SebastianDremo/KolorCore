@@ -8,5 +8,13 @@
 
 <body>
 <div class="image-bg"></div>
-<div class="container"></div>
+<div class="container">
+    <form asp-controller="First" asp-action="Logged" method="post">
+                <p>
+                    <label asp-for="Login">Login:</label>
+                    <input asp-for="Login" />
+                </p>
+                <button type="submit">OK</button>
+            </form>
+</div>
 </body>

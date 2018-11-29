@@ -17,8 +17,9 @@ body{
     z-index: -1;
 }
 
-
-.first-item{
-    margin-bottom: 15px;
-    
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
