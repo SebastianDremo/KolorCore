@@ -10,12 +10,9 @@ namespace Project1.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Logged(string Login)
+        public IActionResult Logged(LoginModel loginModel)
         {
-            LoginModel loginModel = new LoginModel();
-            loginModel.Login = Login;
-
-            return View();
+            return View(loginModel);
         }
     }
 }
